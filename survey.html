@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Survey Form</title>
+  <style type="text/css">
+    body {
+      background-image: url("https://i.imgur.com/faM4Hn1.png");
+      font-family: sans-serif;
+      text-align: center;
+      color: rgb(0, 28, 56);
+    }
+    .stylized {
+      font-size: 15px;
+      background-color: white;
+      line-height: 200%;
+      color: rgb(38, 75, 112);
+    }
+    .base {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title" class="base"> Sample Survey Form </h1>
+  <p id="description" class="base"> A sample survey form to demonstrate html and css capabilities. </p>
+  <div class="stylized">
+    <form id="survey-form">
+      <label for:"name" id="name-label"> Name: </label>
+      <input type="text" required name="name" placeholder="Enter name here" id="name"></input>
+      <br>
+      <label for:"email" id="email-label"> Email address: </label>
+      <input type="email" required name="name" placeholder="Enter email here" id="email"></input>
+      <br>
+      <label for:"number" id="number-label"> How many hours ago were you born? </label>
+      <input type="number" required name="number" placeholder = "Enter age in hours here" id="number" min="1" max="1077480"> </input>
+      <br>
+      <label for:"dropdown">Select your favourite basketball team:</label>
+      <select id = "dropdown" name="teamSelect" class="dropdown">
+        <option disabled selected value> Choose a team </option>
+        <option value = "raptors">Raptors</option>
+        <option value = "lakers">Lakers</option>
+        <option value = "warriors">Warriors</option>
+        <option value = "broncos">Broncos</option>
+      </select>
+      <br>
+      <p> Enter your gender: <br>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+      </p>
+      <p> Which of these do you own? <br>
+        <label for="check1"><input id="check1" type="checkbox" name="computer" value="computer"> Desktop Computer</label>
+        <br>
+        <label for="check2"><input id="check2" type="checkbox" name="phone" value="phone"> Cell Phone</label>
+        <br>
+        <label for="check3"><input id="check3" type="checkbox" name="phone" value="phone"> Cable Television</label>
+      </p>
+      <label for:"comments">Any additional comments?</label>
+      <textarea id="comments" name="comments" placeholder="Enter thoughts here:"></textarea>
+      <br>
+      <button id="submit" type="submit"> Submit here! </button>
+    </form>
+  </div>
+</body>
+</html>
