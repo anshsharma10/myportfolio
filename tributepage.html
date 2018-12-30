@@ -2,30 +2,47 @@
 <html>
 <head>
   <style>
-    body {
-      background-color: #ff6666;
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; text-align:center;
-    }
-
-    h1 {
-      font-size: 36px;
-    }
+  body {
+    background-image: url("https://i.imgur.com/ORlTWWA.gif");
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; text-align:center;
+    color: rgb(242, 196, 196);
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .para {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+  }
+  ul {
+    display: inline-block;
+  }
+  #image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+  #img-caption {
+    font-size: 80%;
+  }
+  a {
+    color: rgb(219, 255, 237);
+  }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center"> Latin is a dead language </h1>
-          <h4 class="text-center"> <em> Lorem ipsum dolor sit amet, eum no dicat postulant expetendis </em> </h4>
-          <div class="thumbnail">   <img src="http://static.tvtropes.org/pmwiki/pub/images/emperor_nero_2332.jpg">
-            <div class="caption text-center"> Please be friends with nero </div>
-          </div>
-        </div>
-      </div>
+  <div class="container" id="main">
+    <h1 class="text-center" id="title"> Latin, the classical language </h1>
+    <h4 class="text-center"> <em> Lorem ipsum dolor sit amet, eum no dicat postulant expetendis </em> </h4>
+    <div class="thumbnail" id="img-div">
+      <img id="image" src="http://static.tvtropes.org/pmwiki/pub/images/emperor_nero_2332.jpg">
+      <br>
+      <div class="caption text-center" id="img-caption"> Nero, former emperor of rome </div>
     </div>
-    <h4 class="text-center"> List of latin:</h4>
+    <p class="para" id="tribute-info"> Latin was the language used in areas surrounding Rome, and became the dominant language in many cities as the Roman Empire expanded. It was used as the language of international communication until the 18th century, when other languages evolved. It is still taught today. The famous "Lorem Ipsum" is written in Latin. </p>
+    <h4 class="text-center"> List of languages that stem from latin:</h4>
     <ul>
       <li> Italian </li>
       <li> French </li>
@@ -34,7 +51,7 @@
       <li> Deutch </li>
       <li> English </li>
     </ul>
-    <h4> For more info, go to: <a href="https://en.wikipedia.org/wiki/Latin"> wikipedia </a> </h4>
+    <h4> For more info, head over to <a id="tribute-link" href="https://en.wikipedia.org/wiki/Latin" target="_blank"> Wikipedia. </a> </h4>
   </div>
 </body>
 </html>
