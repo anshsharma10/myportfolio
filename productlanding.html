@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+  @import url('https://fonts.googleapis.com/css?family=Staatliches');
+  h1 {
+    font-family: 'Staatliches', sans-serif;
+  }
+  body {
+    background-color: black;
+    background-image: url("https://i.imgur.com/1WOarv2.png");
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  main {
+    text-align: center;
+  }
+  #header {
+  }
+  nav {
+    position: fixed;
+    top: 0px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width:100%;
+  }
+  iframe {
+    padding-top:100px;
+  }
+  .resize1 {
+    width: auto;
+    height: auto;
+    max-width:40px;
+    max-height:40px;
+    padding:10px;
+  }
+  .box1 {
+    display:flex;
+    flex-direction:row;
+  }
+  .formdiv {
+    padding:140px;
+  }
+  footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    width:100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .linkcolour{
+    color: rgb(255, 224, 224);
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(22, 73, 49);
+    }
+    nav {
+      background-color: rgb(46, 119, 85);
+    }
+  }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <div class="box1">
+        <img src="https://i.imgur.com/dyBhsxs.png" id="header-img" alt="chicken icon" class="resize1"></img>
+        <h2> Chickens. </h2>
+      </div>
+      <a class="nav-link" href="#video"> Information </a>
+      <a class="nav-link" href="#form"> Updates </a>
+      <a class="nav-link" href="#footer"> Sources </a>
+    </nav>
+  </header>
+  <main>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KsuesiVJgtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="formdiv">
+      <p> Please enter your email to receive updates on the next availability of chickens: </p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+        <label for="email"> Email: </label>
+        <input id="email" type="email" name="email" placeholder="Enter email here"> </input>
+        <input type="submit" id="submit" class="btn" value="Submit"></button>
+      </form>
+    </div>
+  </main>
+  <footer id="footer">
+    <div>Icons made by <a class="linkcolour" href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a class="linkcolour" href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a class="linkcolour" href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></div>
+  </footer>
+</body>
+</html>
