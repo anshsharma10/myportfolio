@@ -20,7 +20,7 @@ var server = http.createServer(function(req, res){
     fs.createReadStream(__dirname + '/techdocumentation.html').pipe(res);
   }
 });
-});
+
 
 server.listen(3000);
 console.log('ok listening');
