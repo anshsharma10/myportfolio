@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Quicksand');
+    body {
+      font-family: Quicksand;
+      background-color: rgb(242, 247, 255);
+    }
+
+    @media screen and (max-width: 600px) {
+      #navbar {
+        background-color: rgb(193, 245, 255);
+        width: 100%;
+        height:100%;
+      }
+      main {
+        padding-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      #navbar {
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        line-height: 2em;
+        background-color: rgb(193, 245, 255);
+        border-style: solid;
+        border-color: rgb(182, 208, 249);
+        border-width: 4px;
+      }
+    }
+
+    #navbar {
+    }
+    main {
+      padding-top: 20px;
+      margin-left: 22%;
+      width: 50%;
+      line-height: 1.5em;
+    }
+    header {
+      font-size: 27px;
+      padding-left: 20px;
+      line-height: 1.5em;
+    }
+    .nav-link {
+      line-height: 2em;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <br>
+    <header> Turing <br> Documentation </header>
+    <br>
+    <a href="#What_is_Turing?" class="nav-link"> What is Turing? </a>
+    <br>
+    <a href="#Programming_in_Turing" class="nav-link"> Programming in Turing </a>
+    <br>
+    <a href="#Specific_Syntax" class="nav-link"> Specific Syntax </a>
+    <br>
+    <a href="#Use_in_teaching" class="nav-link"> Use in teaching </a>
+    <br>
+    <a href="#References" class="nav-link"> References </a>
+  </nav>
+  <main id="main-doc">
+    <section id="What_is_Turing?" class="main-section">
+      <header>What is Turing?</header>
+      <p> Turing is a language developed in the University of Toronto by Ric Holt and James Cordy. It was created in 1982. It is very simple to use and understand compared to other programming languages taught to beginners. </p>
+      <p> Here are some advantages of Turing:</p>
+      <li>Low processor drain</li>
+      <li>Easily readable syntax</li>
+      <li>Free to use</li>
+      <br>
+    </section>
+    <section id="Programming_in_Turing" class="main-section">
+      <header>Programming in Turing </header>
+      <p> Turing is notable for its syntax. For example, here's the "Hello World" program in Java: </p>
+      <pre><code>
+        class HelloWorldApp {
+          public static void main(String[] args) {
+            System.out.println("Hello World!"); // Prints the string to the console.
+          }
+        }
+      </code></pre>
+      <p> And here is the same code in Turing: </p>
+      <pre><code> put "Hello World!" </code></pre>
+    </section>
+    <section id="Specific_Syntax" class="main-section">
+      <header>Specific Syntax</header>
+      <p> Turing has some specific syntax that makes it different from other languages. </p>
+      <li> Variables are declared by typing the variable's name, a colon, then the variable's data type:</li>
+      <code> var name : string </code>
+      <li> User input is handled using the "get" statement: </li>
+      <code> get name </code>
+      <li> The "put" statement replaces "print" or "console.log" from other languages: </li>
+      <code> put name </code>
+      <p> There are other differences found in this language. Visit compsci.ca for more information. </p>
+    </section>
+    <section id="Use_in_teaching" class="main-section">
+      <header>Use in teaching</header>
+      <p> Due to its simplicity, Turing has been taught in schools worldwide. One such school is William Lyon Mackenzie C.I, located in Toronto. </p>
+      <p> Mackenzie, due to its MaCS program, has a wide variety of dedicated students. As such, they do some amazing things with Turing that you might not expect, even though it is thought of as a beginner-level language. Examples include trivia games, RPGs, and complex particle systems.</p>
+    </section>
+    <section id="References" class="main-section">
+      <header> References </header>
+      <p> <a href="http://compsci.ca/v3/">Compsci.ca</a> </p>
+      <p> <a href="https://en.wikipedia.org/wiki/Turing_(programming_language)">Wikipedia</a></p>
+    </section>
+  </main>
+</body>
+</html>
