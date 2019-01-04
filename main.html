@@ -30,19 +30,38 @@
     text-decoration: none;
     color:White;
   }
-  #navbar {
-    font-family: "Roboto";
-    position:fixed;
-    display: flex;
-    flex-direction: row;
-    width:100%;
-    align-items: baseline;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    margin-left:-8px;
-    margin-top: -8px;
+
+  @media screen and (min-width: 600px) {
+    #navbar {
+      font-family: "Roboto";
+      position:fixed;
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      align-items: baseline;
+      justify-content: space-around;
+      background-color: black;
+      color: white;
+      margin-left:-8px;
+      margin-top: -8px;
+    }
   }
+
+  @media screen and (max-width: 600px) {
+    #navbar {
+      font-family: "Roboto";
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      align-items: baseline;
+      justify-content: space-around;
+      background-color: black;
+      color: white;
+      margin-left:-8px;
+      margin-top: -8px;
+    }
+  }
+
   #welcome-section {
     background-color: black;
     margin-left:-8px;
@@ -151,9 +170,9 @@
       <div class="welcome-name">
         <h1> Ansh Sharma </h1>
       </div>
-      <div class="welcome-image"><img id="welcomeimage" src="IMG_3843.JPG"></img></div>
+      <div class="welcome-image"><img id="welcomeimage" src="https://lh3.googleusercontent.com/sXEeo28BqXOmPsb9EfGPXX1fnjGl8FAs6spTNrj-wGdDfpoWUAf7PlU3kcFDsTsWs7rRyKssTKSu6I1_hk5sG2-xoPXmGT1ne82h3ggaDwxO9K2lIu8VkIwQdyV0LEobXwuDLD96LA=w2400"></img></div>
       <div class="welcome-text">
-        <p> A motivated student from Toronto with a drive for success. 17 years old. Experience in various fields. </p>
+        <p> A motivated student from Toronto with a drive for success. 17 years old. Experience in various fields. </p><a id="profile-link" target="_blank" href="https://github.com/pivot5"> Github </a>
       </div>
     </div>
   </div>
