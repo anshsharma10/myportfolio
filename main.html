@@ -1,18 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Ansh Sharma</title>
   <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  html {
+    overflow-x:hidden;
+  }
+  body {
+    display:flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+  }
+  a {
+    text-decoration: none;
+    color:White;
+  }
+  #navbar {
+    font-family: "Roboto";
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    margin-left:-8px;
+    margin-top: -8px;
+  }
+  #welcome-section {
+    background-color: black;
+    margin-left:-8px;
+    width:105%;
+    height: 100vh;
+    padding-top:7em;
+    font-family: "Roboto";
+    color: white;
+  }
 
+  .grid-container {
+    width:70%;
+    min-height:75%;
+    display:grid;
+    grid-template-rows: 25% 75%;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    margin:auto;
+  }
+  img {
+    max-width:100%;
+    max-height:100%;
+  }
+  .welcome-name {
+    text-align:center;
+    grid-column: 1 / 3;
+    align-self:center;
+  }
+  .welcome-image{
+
+  }
+  #welcomeimage{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 10%;
+  }
+  .welcome-text{
+    font-size: 2em;
+    text-align: center;
+    align-self:center;
+    margin-top: -5%;
+  }
+  #interests {
+    font-family: "Roboto";
+    padding-top:3%;
+    width:105%;
+    height: 80vh;
+  }
+  .offcenter_list {
+    padding-left: 60%;
+    font-size: 2.5em;
+    line-height: 1.75em;
+  }
+  ul {
+    list-style-position: inside;
+  }
+  #projects {
+    font-family: "Roboto";
+    width:105%;
+    text-align:center;
+    background-color: black;
+    color: white;
+    margin-left:-8px;
+    margin-bottom: -2%;
+  }
+  .projects-intro {
+    padding-top: 1%;
+  }
+  #turingisp {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  #javaisp {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+  }
+  #samplewebsites {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+  }
+  .projectinfo{
+    text-align:center;
+    width:50%;
+  }
   </style>
-  </head>
-  <body>
-  <h1> Temporary homepage </h1>
-  <p> Links to current work: </p>
-  <a href="tributepage">Sample Tribute Page</a> <br>
-  <a href="survey">Sample Survey</a> <br>
-  <a href="productlanding">Sample Product Landing Homepage</a> <br>
-  <a href="techdocumentation">Sample Technical Documentation Page</a>
+</head>
+<body>
+  <div id="navbar">
+    <h2> AnshDot.Com </h2>
+    <h3><a href="#welcome-section"> About </a></h3>
+    <h3><a href="#interests"> Interests </a></h3>
+    <h3><a href="#projects"> Projects </a></h3>
+  </div>
+  <div id="welcome-section">
+    <div class="grid-container">
+      <div class="welcome-name">
+        <h1> Ansh Sharma </h1>
+      </div>
+      <div class="welcome-image"><img id="welcomeimage" src="IMG_3843.JPG"></img></div>
+      <div class="welcome-text">
+        <p> A motivated student from Toronto with a drive for success. 17 years old. Experience in various fields. </p>
+      </div>
+    </div>
+  </div>
+  <div id="interests">
+    <h1 style="padding-left: 20%;"> Interests </h1>
+    <ul>
+      <li class="offcenter_list">Programming</li>
+      <li class="offcenter_list">Graphic Design</li>
+      <li class="offcenter_list">Cinematography</li>
+      <li class="offcenter_list">Illustration</li>
+    </ul>
+  </div>
+  <div id="projects">
+    <h1 class="projects-intro" style="padding-top:5%;">Projects</h1>
+    <div class=project-tile id="turingisp">
+      <video width="416" height="750" autoplay muted loop>
+        <source src="editedturing.mp4" type="video/mp4" />
+      </video>
+      <div style="padding-top: 1%" class="projectinfo">
+        <h2> Word Shooter </h2>
+        <p style="font-size:1.75em;"> A Galaga-style educational video game where the player shoots the correct answer to Grade-10 math and science  questions. Programmed for the Grade 10 Computer Engineering course. </p>
+        <p style="font-size:1.75em;"> Uses collision detection mechanics as well as an artificial particle system to demonstrate explosions. Programed in Turing. </p>
+        <a style="font-size:1.75em;text-decoration: none;color:White;" href="https://github.com/pivot5/Word-Shooter"> Github </a>
+      </div>
+    </div>
+    <div class=project-tile id="javaisp">
+      <div class="projectinfo">
+        <h2> Alpha Attack Maximum </h2>
+        <p style="font-size:1.75em;"> A typing video game that tracks the time taken for a player to type a passage, and calculates their typing speed in words per minute. </p>
+        <p style="font-size:1.75em;"> The game also accounts for typing errors automatically and stores high scores. Programmed in Ready to Program Java for the Grade 11 Introduction to Computer Science Course.</p>
+        <a style="font-size:1.75em;text-decoration: none;color:White;" href="https://github.com/pivot5/alpha-attack-maximum"> Github </a>
+      </div>
+      <video width="416" height="750" autoplay muted loop>
+        <source src="javaedited.m4v" type="video/mp4">
+        </video>
+      </div>
+      <div class=project-tile id="samplewebsites">
+        <div class="projectinfo">
+          <h2> Sample Websites </h2>
+          <p style="font-size:1.75em;"> Several websites developed to show prowess with HTML and CSS. </p>
+          <a style="font-size:1.75em;text-decoration: none;color:White;" href="tributepage.html"> Tribute Page </a>
+          <br>
+          <a style="font-size:1.75em;text-decoration: none;color:White;" href="survey.html"> Survey </a>
+          <br>
+          <a style="font-size:1.75em;text-decoration: none;color:White;" href="productlanding.html"> Product Landing Page </a>
+          <br>
+          <a style="font-size:1.75em;text-decoration: none;color:White;" href="techdocumentation.html"> Technical Documentation Page </a>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+  </html>

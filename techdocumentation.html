@@ -34,8 +34,14 @@
       }
     }
 
-    #navbar {
+    @media screen and (max-width: 600px) {
+      #navbar {
+        border-style: solid;
+        border-color: rgb(182, 208, 249);
+        border-width: 4px;
+      }
     }
+
     main {
       padding-top: 20px;
       margin-left: 22%;
@@ -46,6 +52,9 @@
       font-size: 27px;
       padding-left: 20px;
       line-height: 1.5em;
+    }
+    #navbarheader{
+
     }
     .nav-link {
       line-height: 2em;
@@ -63,7 +72,7 @@
 <body>
   <nav id="navbar">
     <br>
-    <header> Turing <br> Documentation </header>
+    <header id="navbarheader"> Turing <br> Documentation </header>
     <br>
     <a href="#What_is_Turing?" class="nav-link"> What is Turing? </a>
     <br>
