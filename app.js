@@ -4,26 +4,24 @@ var express = require('express');
 var path = require('path')
 var app = express();
 
-var server = http.createServer(function(req, res){
-  console.log('request was made: ' + req.url);
-  if(req.url === '/home' || req.url === '/'){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    fs.createReadStream(__dirname + '/main.html').pipe(res);
-  } else if(req.url === '/survey'){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    fs.createReadStream(__dirname + '/survey.html').pipe(res);
-  } else if(req.url === '/tributepage'){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    fs.createReadStream(__dirname + '/tributepage.html').pipe(res);
-  } else if(req.url === '/productlanding'){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    fs.createReadStream(__dirname + '/productlanding.html').pipe(res);
-  } else if(req.url === '/techdocumentation'){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    fs.createReadStream(__dirname + '/techdocumentation.html').pipe(res);
-  }
+var publicDir = require('path').join(__dirname);
+app.use(express.static(publicDir));
+
+app.get('/', function(req,res){
+  res.sendFile(__dirname + "/main.html")
+});
+app.get('/survey.html', function(req,res){
+  res.sendFile(__dirname + "/survey.html")
+});
+app.get('/tributepage.html', function(req,res){
+  res.sendFile(__dirname + "/tributepage.html")
+});
+app.get('/productlanding.html', function(req,res){
+  res.sendFile(__dirname + "/productlanding.html")
+});
+app.get('/techdocumentation.html', function(req,res){
+  res.sendFile(__dirname + "/techdocumentation.html")
 });
 
-
-server.listen(3000);
+app.listen(3000);
 console.log('ok listening');
