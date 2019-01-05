@@ -1,6 +1,8 @@
 var http = require('http');
 var fs = require('fs');
-
+var express = require('express');
+var path = require('path')
+var app = express();
 
 var server = http.createServer(function(req, res){
   console.log('request was made: ' + req.url);
